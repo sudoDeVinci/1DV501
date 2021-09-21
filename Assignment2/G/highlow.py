@@ -1,16 +1,18 @@
 __author__ = "Tadj Cazaubon"
 
 """
-Implementation fo the game High and Low. The computer chooses a random integer between 1 and 100 and lets the user guess the value.
+Implementation for the game High and Low. The computer chooses a random integer between 1 and 100 and lets the user guess the value.
 After each guess, the user is given a clue of the type higher or lower.
 """
 
+
+"""Module methods needed to create random number, and exit program with an error"""
 from random import randint
 from sys import exit
 
-"""Give a random nunmber between 1 and 100"""
+"""Give a random number between 1 and 100"""
 answer = randint(1,100)
-"""Initiate the guess variable with None value so it can be checked without conflicting with answer"""
+"""Initiate the guess variable with None value so it can be checked against answer"""
 guess = None
 """Number of attempts user takes to correctly guess"""
 attempts = 0
@@ -25,6 +27,7 @@ while guess != answer:
     try:
         """iterate attempts"""
         attempts+=1
+        
         guess = input("\nEnter a guess: ")
 
         """attempt to convert input to int, otherwise, raise error"""

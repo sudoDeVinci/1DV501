@@ -7,8 +7,10 @@ This program reads a positive integer n from the keyboard and then:
 An example of an execution:
 """
 
+"""randint method imported to generate random number"""
 from random import randint
 
+"""Number set to None type to be compared without throwing error."""
 number = None
 
 
@@ -24,13 +26,33 @@ while type(number)!=int or number<0:
         print("\n>>> ERROR: Input must be positive.")
 
 
-generated = [randint(1,100) for x in range(0,number)]
+"""Since we aren't allowed to store the numbers in a data structure before calculation as a rule, 
+    we must do it on the fly during iteration right after generation."""
 
-print(f"\nGenerated Values: {generated}")
+total = 0
+current_max = 0
+current_min = 100
 
-average = sum(generated)/len(generated)
-maximum = max(generated)
-minimum = min(generated)
+generated = [ ]
 
-print(f"\nAverage, Max and Min: {average}, {maximum}, {minimum} \n")
+for x in range(0,number):
+    
+    n = randint(1,100)
+    """add the generated number to the running total"""
+    total+=n
 
+    """if the current maximum is less than the generated number, replace it with the number."""
+    if current_max<n:
+        current_max = n
+    """If the current minimum is more than the number, replace it with the number"""
+    if current_min>n:
+        current_min = n
+    
+    """Append generated integer to list and join as string to make easier to print later"""
+    generated.append(n)
+    generated_str = ' '.join(str(a) for a in generated)
+
+"""Average rounded to two decimals"""
+average = round(total/number,1)
+
+print(f"\n Genrated values: {generated_str} \n Average, min, and max are {average}, {current_min}, and {current_max} \n")
