@@ -8,14 +8,17 @@ the largest integer k, such that 0+2+4+6+8+...+k<n.
 """module method needed to exit during errors""" 
 from sys import exit
 
-"""Take input from user"""
-input_int = input("\nEnter a positive integer: ")
+
 
 try:
-    """Try to convert string input to integer, 
-        if cannot, will raise a ValueError"""
-    input_int = int(input_int)
+    """Take input from user"""
+    input_int = input("\nEnter a positive integer: ")
+    
+    """ if input is not a digit raise a ValueError"""
+    if input_int.isdigit() == False:
+        raise ValueError
 
+    input_int = int(input_int)
     """Check if integer is positive, else 
         raise an exception"""
     if input_int<=0:       
