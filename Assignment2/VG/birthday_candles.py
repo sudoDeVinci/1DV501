@@ -13,7 +13,7 @@ At the end, we print the total number of boxes one has to buy, and how many cand
 
 #Count for the number of candles left between birthdays
 candles_left = 0
-#Count for the total number of boxes bought over 100 borthdays
+#Count for the total number of boxes bought over 100 birthdays
 total_boxes = 0
 #Range of birthdays [1,100]
 years = [year for year in range(1,101)]
@@ -23,7 +23,7 @@ for year in years:
     #We first set boxes to 0 so we determine it year to year
     boxes = 0
     while year>candles_left:
-        #if there aren't enough candles left to cover this borthday, we buy another box with 24 candles
+        #if there aren't enough candles left to cover this birthday, we buy another box with 24 candles
         candles_left+=24
         boxes+=1
         total_boxes+=1
