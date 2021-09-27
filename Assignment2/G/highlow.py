@@ -22,18 +22,18 @@ while guess != answer:
 
     """Exit program if 10 attempts are made"""
     if attempts ==10:
-        print("\nYou're obviously not taking this seriously.")
+        print("You're obviously not taking this seriously.")
         exit(0)
     try:
         """iterate attempts"""
         attempts+=1
         
-        guess = input("\nEnter a guess: ")
+        guess = input("Enter a guess: ")
 
         """attempt to convert input to int, otherwise, raise error"""
         guess = int(guess)
     except:
-        print("\nGuess must be an int")
+        print("Guess must be an int")
 
 
     while type(guess) != int:
@@ -42,15 +42,15 @@ while guess != answer:
             """attempt to convert input to int, otherwise, raise error"""
             guess = int(input("\nEnter a guess: "))
         except:
-            print("\nGuess must be an int")
+            print("Guess must be an int")
 
 
     if guess>answer:
-        print("\n> Lower")
+        print("  Clue: Lower")
 
     elif guess<answer:
-        print("\n> Higher")
+        print("  Clue: Higher")
     
-print(f"\nYou got it! \nYour guess: {guess} \nAnswer: {answer} \nAttempts: {attempts} \n")
+print(f"\n  Correct answer after {attempts} guesses!\n")
 
     

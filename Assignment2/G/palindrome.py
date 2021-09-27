@@ -29,4 +29,14 @@ def is_palindrome(s):
         is_pal = True
     return is_pal
 
-print(is_palindrome("Ni talar bra latin!" ))
+#print(is_palindrome("Ni talar bra latin!" ))
+
+
+def main():
+    #Example of palindrome in action:
+    print("\nThe is_palindrome() function takes a single string as an argument and returns true if it is a palindrome. \n")
+    print(f"An example: \n >> Output of is_palindrome('Ni talar bra latin!'): {is_palindrome('Ni talar bra latin!')}")
+    print("The function tests the string with the all spaces non alpha-numeric characters removed along with lowered capitalization.\n")
+
+if __name__  == '__main__':
+    main()

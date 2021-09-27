@@ -79,10 +79,10 @@ The function has_two_X(s) returns True if the string contains exactly two instan
 """
 
 print("\n      + has_two_X(s)")
-print(f"\n> Using has_two_X() to count the instances of 'X' in 'Conexxion': {has_two_X('conexxion')}")
-print(f"> Using has_two_X() to count the instances of 'X' in 'Conexxion': {has_two_X('coneXxion')}")
-print(f"> Using has_two_X() to count the instances of 'X' in 'ConeXXion': {has_two_X('coneXXion')}")
-print(f"> Using has_two_X() to count the instances of 'X' in 'ConeXXXion': {has_two_X('coneXXXion')}\n")
+print(f"\n> Using has_two_X() to count the instances of 'X' in 'conexxion': {has_two_X('conexxion')}")
+print(f"> Using has_two_X() to count the instances of 'X' in 'coneXxion': {has_two_X('coneXxion')}")
+print(f"> Using has_two_X() to count the instances of 'X' in 'coneXXion': {has_two_X('coneXXion')}")
+print(f"> Using has_two_X() to count the instances of 'X' in 'coneXXXion': {has_two_X('coneXXXion')}\n")
 
 
 #------------------------------------------------------------------------------------------------------------------------------------------------#

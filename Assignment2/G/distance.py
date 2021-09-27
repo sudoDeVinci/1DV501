@@ -23,9 +23,9 @@ def distance(x1,y1,x2,y2):
 
 #User inputs x and y points (Assumed to be correct input)
 x1 = float(input("\nEnter x1: "))
-y1 = float(input("\nEnter y1: "))
-x2 = float(input("\nEnter x2: "))
-y2 = float(input("\nEnter y2: "))
+y1 = float(input("Enter y1: "))
+x2 = float(input("Enter x2: "))
+y2 = float(input("Enter y2: "))
 
 #Assign function return to variable to print
 dist = distance(x1,y1,x2,y2)

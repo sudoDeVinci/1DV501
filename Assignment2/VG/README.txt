@@ -23,7 +23,7 @@ for Assignment 2.
     <-> This program reads a positive integer as input from a user, then prints the number of zeros, odd digits, and even digits of
         the integer.
     
-    <-> first we read input from the user as a string. Secondly we check if it is a digit or not. if false, we move to a while loop 
+    <-> First we read input from the user as a string. Secondly we check if it is a digit or not. if false, we move to a while loop 
         inside of a try-except block to prompt for input until satisfactory conditions are meto We also take the absolute value of the 
         input integer in the case of a negative input. We the convert the integer back into a string to iterate over each digit. 
         A dictionary with the keys "Zeros","Even",and "Odd" and the value 0 set initially to each is used to iterate over the digits
@@ -42,4 +42,7 @@ for Assignment 2.
         and means a plane with boundaries x,y such that |x|<=|k|, |y|<=|k|, k>0.
     
     <-> 
+
+
+
     ...

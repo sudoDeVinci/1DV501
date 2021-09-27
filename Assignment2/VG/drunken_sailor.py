@@ -15,7 +15,6 @@ and means a plane with boundaries x,y such that |x|<=|k|, |y|<=|k|, k>0.
 
 from random import randint
 
-
 """
 Since we needs mutiple instances of essentially the same object performing the same function(s),
 it stands to reason to use a class to define the behaviour of a sailor and call the appropritate
