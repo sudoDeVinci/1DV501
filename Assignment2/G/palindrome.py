@@ -8,7 +8,7 @@ Along with a short example of how it works.
 def is_palindrome(s):
     #We convert all characters to lowercase, remove all spaces, and join each character as long as it is alphabetic
     s = s.lower()
-    s = s.replace(' ','')
+    s = s.replace(' ', '')
     s = ''.join([char for char in s if char.isalpha()])
 
     #Our boolean to determine whether s is a palindrome is set to False by default

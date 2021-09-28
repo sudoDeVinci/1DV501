@@ -3,7 +3,6 @@ __author__ = "Tadj Cazaubon"
 """
 This program creates a function which computes the distance between two points (x1,y1) and (x2,y2) using :
 distance = Sqrt( (x1-x2)^2 + (y1-y2)^2 )
-    
 The answer should be presented with three decimal digits.
 """
 
@@ -28,6 +27,6 @@ x2 = float(input("Enter x2: "))
 y2 = float(input("Enter y2: "))
 
 #Assign function return to variable to print
-dist = distance(x1,y1,x2,y2)
+dist = distance(x1, y1, x2, y2)
 
 print(f"\nThe distance between ({x1},{y1}) and ({x2},{y2}) is {dist} \n")

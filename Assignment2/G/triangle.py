@@ -10,12 +10,11 @@ from sys import exit
 layers = None
 
 
-
 """While loop to make sure input is an odd, positive integer."""
 while type(layers)!=int or layers%2==0 or layers<0:
     
     try:
-        layers = input("\n>Input an odd positive integer: ")
+        layers = input("\nInput an odd positive integer: ")
         """See if input can be represented as an int, if not, raise ValueException"""
         layers = int(layers)
         """If input is even, raise General Exception"""
