@@ -34,9 +34,10 @@ def is_palindrome(s):
 
 def main():
     #Example of palindrome in action:
-    print("\nThe is_palindrome() function takes a single string as an argument and returns true if it is a palindrome. \n")
-    print(f"An example: \n >> Output of is_palindrome('Ni talar bra latin!'): {is_palindrome('Ni talar bra latin!')}")
-    print("The function tests the string with the all spaces non alpha-numeric characters removed along with lowered capitalization.\n")
+    print("\nThe is_palindrome() function takes a single string as an argument and returns True if it is a palindrome.")
+    print("The function tests the string with the all spaces non alpha-numeric characters removed along with lowered capitalization.\n\n Examples:")
+    print(f"Output of is_palindrome('Ni talar bra latin!'): {is_palindrome('Ni talar bra latin!')}")
+    print(f"Output of is_palindrome('Was it a rat,I saw?'): {is_palindrome('Was it a rat,I saw?')} \n")
 
 if __name__  == '__main__':
     main()
