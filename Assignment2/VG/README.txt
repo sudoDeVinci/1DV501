@@ -41,8 +41,11 @@ for Assignment 2.
         This program assumes a grid plane with center (0,0).The size of the plane (k) is user determined
         and means a plane with boundaries x,y such that |x|<=|k|, |y|<=|k|, k>0.
     
-    <-> 
-
+    <-> Firstly we I make a class called 'drunk' to represent each instance of a sailor. This class takes the number of steps possible as an 
+        argument, and contains a number of variablesand one method called 'walk' to respresent the random walk loop. The drunk class contains
+        variables to track the x and y positions of the insatnce on the grid plain, a bolean indicating whether it's considered overboard or 
+        not and the number of steps left to take for that insatance. The class also contains a method 'walk' which takes the size of the grid
+        plain as an argument. 
 
 
     ...

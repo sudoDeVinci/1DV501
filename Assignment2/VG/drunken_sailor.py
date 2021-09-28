@@ -12,7 +12,6 @@ This program assumes a grid plane with center (0,0).The size of the plane (k) is
 and means a plane with boundaries x,y such that |x|<=|k|, |y|<=|k|, k>0.
 """
 
-
 from random import randint
 
 """
