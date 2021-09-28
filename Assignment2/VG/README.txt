@@ -43,9 +43,22 @@ for Assignment 2.
     
     <-> Firstly we I make a class called 'drunk' to represent each instance of a sailor. This class takes the number of steps possible as an 
         argument, and contains a number of variablesand one method called 'walk' to respresent the random walk loop. The drunk class contains
-        variables to track the x and y positions of the insatnce on the grid plain, a bolean indicating whether it's considered overboard or 
-        not and the number of steps left to take for that insatance. The class also contains a method 'walk' which takes the size of the grid
-        plain as an argument. 
+        variables to track the x and y positions of the instance on the grid plain, a bolean indicating whether it's considered overboard or 
+        not and the number of steps left to take for that instance. The class also contains a method 'walk' which takes the size of the grid
+        plain as an argument. While there are steps left to take, we take a step in any direction and subtract it from the total. If our 
+        instance ends up outside the spwecified plain, we set our overboard variable to true and break.
+        I made a simple parser which only allows the user to continue after specifying an integer. We take in the number of sailors, 
+        the size of the plain and the number of steps, and iterate over a range of the sailors, calling walk() for each. We count each 
+        that ends up overboard and we give a percentage at the end.  
 
++ pi_approx.py:
+    <-> This program approximates value for pi via the ratio of points plotted on a cartesian plane inside of a unit square containing a unit circle.
+        The ratio of points plotted within the square which are also within the circle against those plotted altogether within the square, is roughly 
+        equal to the ratio of the circle's area to the sqaure's.This should then roughly equal pi given enough points.
 
-    ...
+    <-> Since we're checking for three different numbers of points plotted, it's better to make a function to reuse. First I use a list comprehension
+        and a zip to iterate over our given number and get our x and y points. Any points with a distance of 1 or less from our origin are inside the circle.
+        For each point, we check if the value is less than 1, if yess we count it. a tthe end of the iteration, we find the fraction of this count over our 
+        given number of points. We call this for 10, 10000 and 1000000 points. 
+
++
