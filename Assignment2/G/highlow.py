@@ -1,18 +1,18 @@
 __author__ = "Tadj Cazaubon"
 
+from random import randint
+from sys import exit
+
 """
-Implementation for the game High and Low. The computer chooses a random integer between 1 and 100 and lets the user guess the value.
+Choose a random integer between 1-100, user guesses value.
 After each guess, the user is given a clue of the type higher or lower.
 """
 
 
-"""Module methods needed to create random number, and exit program with an error"""
-from random import randint
-from sys import exit
-
 """Give a random number between 1 and 100"""
-answer = randint(1,100)
-"""Initiate the guess variable with None value so it can be checked against answer"""
+answer = randint(1, 100)
+
+"""Initiate the guess variable with None so it can be checked against answer"""
 guess = None
 """Number of attempts user takes to correctly guess"""
 attempts = 0
@@ -21,36 +21,29 @@ attempts = 0
 while guess != answer:
 
     """Exit program if 10 attempts are made"""
-    if attempts ==10:
+    if attempts == 10:
         print("You're obviously not taking this seriously.")
         exit(0)
     try:
         """iterate attempts"""
-        attempts+=1
-        
+        attempts += 1
         guess = input("Enter a guess: ")
 
         """attempt to convert input to int, otherwise, raise error"""
         guess = int(guess)
-    except:
+    except Exception:
         print("Guess must be an int")
-
 
     while type(guess) != int:
 
         try:
             """attempt to convert input to int, otherwise, raise error"""
             guess = int(input("\nEnter a guess: "))
-        except:
+        except Exception:
             print("Guess must be an int")
 
-
-    if guess>answer:
+    if guess > answer:
         print("  Clue: Lower")
-
-    elif guess<answer:
+    elif guess < answer:
         print("  Clue: Higher")
-    
 print(f"\n  Correct answer after {attempts} guesses!\n")
-
-    
